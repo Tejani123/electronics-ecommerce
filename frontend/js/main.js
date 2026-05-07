@@ -1,4 +1,4 @@
-const API_URL = 'https://your-backend-render-url.onrender.com/api';
+const API_URL = 'https://electronics-ecommerce-1-5894.onrender.com';
 
 let cart = JSON.parse(localStorage.getItem('zenith_cart')) || [];
 
