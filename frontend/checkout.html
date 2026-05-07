@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Zenith Electronics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: var(--primary); font-weight: 700; font-size: 1.2rem;">ZENITH</a></div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding: 60px 0; max-width: 800px;">
+        <h1>Checkout</h1>
+        
+        <form id="checkout-form" style="margin-top: 40px; display: grid; gap: 30px;">
+            <div style="background: var(--secondary); padding: 30px; border-radius: 12px;">
+                <h3 style="margin-bottom: 20px;">Shipping Information</h3>
+                <div style="display: grid; gap: 20px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px;">Delivery Address</label>
+                        <input type="text" id="address" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label style="display: block; margin-bottom: 8px;">City</label>
+                            <input type="text" id="city" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 8px;">Phone Number</label>
+                            <input type="tel" id="phone" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: #eef7ff; padding: 30px; border-radius: 12px; border: 1px solid var(--accent);">
+                <h3 style="margin-bottom: 10px;">Payment Method</h3>
+                <p style="font-weight: 600; color: var(--accent);">Cash on Delivery (COD)</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 5px;">Pay in cash when your order is delivered to your doorstep.</p>
+            </div>
+
+            <div id="order-total-summary" style="font-size: 1.5rem; font-weight: 700; text-align: right;">
+                Total: $0.00
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; padding: 20px; font-size: 1.1rem;">Place Order</button>
+        </form>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

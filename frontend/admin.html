@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Zenith Electronics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <nav>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: var(--primary); font-weight: 700; font-size: 1.2rem;">ZENITH ADMIN</a></div>
+            <div class="nav-links">
+                <a href="#" onclick="logout()" style="text-decoration: none; color: var(--text-main);">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding: 40px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+            <h1>Order Management</h1>
+            <div id="stats-container" style="display: flex; gap: 20px;">
+                <div class="stat-card">Total Orders: <span id="total-orders-count">0</span></div>
+                <div class="stat-card">Revenue: <span id="total-revenue">$0.00</span></div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Items</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-orders-list"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

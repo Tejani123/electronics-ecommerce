@@ -1,0 +1,61 @@
+.stat-card {
+    background: var(--secondary);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.table-container {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--secondary);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    background: var(--secondary);
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+td {
+    padding: 20px;
+    border-bottom: 1px solid var(--secondary);
+    font-size: 0.95rem;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-pending { background: #fff4e5; color: #b76e00; }
+.status-processing { background: #e5f1ff; color: #004fb7; }
+.status-shipped { background: #e5fff1; color: #00b74a; }
+.status-delivered { background: #f0f0f0; color: #333; }
+
+select.status-select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.btn-delete {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
